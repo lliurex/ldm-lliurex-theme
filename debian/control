@@ -8,7 +8,7 @@ Standards-Version: 3.9.5
 Package: ldm-lliurex-theme
 Conflicts: ldm-ubuntu-themes (<< 2:2.0.40.1)
 Provides: ldm-themes
-Depends: ${misc:Depends}, ${shlibs:Depends}, human-theme, ldm (>= 2:2.0.6-1ubuntu1)
+Depends: ${misc:Depends}, ${shlibs:Depends}, ldm (>= 2:2.0.6-1ubuntu1)
 Architecture: all
 Description: LliureX theme for the LTSP Display Manager
  LDM is an ssh based X11 display manager, this package contains
