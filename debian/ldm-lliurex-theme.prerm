@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+SYSTEM_CONFIG_SCRIPT="/usr/share/ldm/locales"
+OUR_BINARY="/usr/share/ldm/locales.lliurex"
+
+case "$1" in
+  remove|deconfigure|failed-upgrade)
+	update-alternatives --remove ldm-theme /usr/share/ldm/themes/lliurex
+	
+	#if [ -f "${SYSTEM_CONFIG_SCRIPT}.real" ] ; then
+	#	rm -f "${SYSTEM_CONFIG_SCRIPT}"
+        #        dpkg-divert --package ldm-lliurex-theme --rename --quiet --remove "${SYSTEM_CONFIG_SCRIPT}" || true
+	#fi
+	
+  ;;
+esac
+
+#DEBHELPER#
